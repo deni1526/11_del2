@@ -5,7 +5,7 @@ class Field {
     private int[] turn;
 
     public Field() {
-        var description = new String[this.language][12];
+        var description = new String[this.language.length][12];
         description[0][0] = "Game info";
         description[0][2] = "You climb to the top of the tower and discover a hidden treasure. You gain 250 points!";
         description[0][3] = "You stumble into a deep crater and struggle to get out. You lose 100 points.";
