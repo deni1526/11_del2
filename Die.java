@@ -1,6 +1,6 @@
 class Die {
-    private int min;
-    private int max;
+    private int min = 1;
+    private int max = 6;
     private int facevalue;
 
     Die(int min, int max) {
