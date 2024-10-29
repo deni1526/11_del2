@@ -1,3 +1,5 @@
-public static void main(String[] args) {
-    GameLogic.runGame();
+class Main {
+    public static void main(String[] args) {
+        GameLogic.runGame();
+    }
 }
