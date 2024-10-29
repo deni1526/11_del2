@@ -18,12 +18,14 @@ class RaffleCup {
    public void shakeRaffle() {
       for(int i = 0; i < this.die.length; i++) {
          Random rand = new Random();
-         this.die[i].setFaceValue(rand.nextInt(this.die[i].getMax() - this.die[i].getMin() + 1) + this.die[].getMin());
+         this.die[i].setFaceValue(rand.nextInt(this.die[i].getMax() - this.die[i].getMin() + 1) + this.die[i].getMin());
       }
    }
 
 
-   public void setFaceValue()
+   public void setFaceValue() {
+
+   }
    
 }
 
