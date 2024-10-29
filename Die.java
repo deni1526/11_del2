@@ -27,7 +27,7 @@ class Die {
     }
 
     public int getMin() {
-        return this.max;
+        return this.min;
     }
 
     public void setMin(int min) {
