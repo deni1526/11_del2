@@ -10,4 +10,11 @@ class Utility {
         int playerturn = (currentturn + turns) % Player.length;
         return playerturn;
     }
+
+    public static boolean checkWin(int balance, int wincon) {
+        if(balance >= wincon) {
+            return true;
+        }
+        return false;
+    }
 }
