@@ -24,4 +24,8 @@ class Player {
         this.account = account;
     }
 
+    public int getAccountBalance() {
+        return account.getBalance();
+    }
+
 }
