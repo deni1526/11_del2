@@ -5,6 +5,7 @@ class GameLogic {
         var Players = new Player[2];
         var cup = new RaffleCup(2);
         int currentturn = 0;
+        var Field = new Field();
 
         Utility.printLanguages();
         Field.setLanguage(UserInputs.inputLanguage());
@@ -16,7 +17,7 @@ class GameLogic {
         for(int i = 0; i < 3000; i++) {
             Players[currentturn]
 
-            currentturn = Playerturn(getTurn(getDieSum), )
+            currentturn = Utility.Playerturn(Field.getTurn(cup.getDieSum()), Players, currentturn);
         }
 
 
