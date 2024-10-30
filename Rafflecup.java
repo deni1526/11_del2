@@ -1,23 +1,31 @@
 import java.util.Random;
 class RaffleCup {   
    
-    private int dieSum;
-    private Die die[];
 
-   public void createDie(int dice){
-    var die = new Die[dice];
-    this.die = die;
+   private int dieSum;
+   private Die die[];
+
+   public RaffleCup(int die){
+      var dice = new Die[die];
+      this.die = dice;
    }
     
    //methods
-   public void shakeRaffle() {
-   
-    for(int i = 0; i < die.length;i++){
-    Random rand = new Random();
-       a = rand.nextInt(die[].getMax() - die.getMin() + 1) + die.getMin;
-      
-    }
-    public void setFaceValue()
+   public void shakeDie() {
+      Random rand = new Random();
+      for(int i = 0; i < this.die.length;i++){
+         die[i].setFaceValue(rand.nextInt(this.die[i].getMax() - this.die[i].getMin() + 1) + this.die[i].getMin());
+      }
+   }
+   public void calDieSum(){
+      this.dieSum = 0;
+      for(int i = 0; i < this.die.length;i++){
+        this.dieSum += die[i].getFaceValue();
+      }
+   }
+
+   public int getDieSum() {
+      return this.dieSum;
    }
 }
 
