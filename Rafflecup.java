@@ -27,6 +27,14 @@ class RaffleCup {
    public int getDieSum() {
       return this.dieSum;
    }
+
+   public int[] getDiceValues() {
+      var DiceValues = new int[die.length];
+      for(int i = 0; i < die.length; i++) {
+         DiceValues[i] = die[i].getFaceValue();
+      }
+      return DiceValues;
+   }
 }
 
 
