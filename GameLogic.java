@@ -20,10 +20,9 @@ class GameLogic {
             System.out.println(Players[currentturn] + ":");
             cup.shakeDie();
             Utility.printDiceFaceValues(cup.getDiceValues());
-            Field.getDescription(Field.getLanguage(), cup.getDieSum());
+            System.out.println(Field.getDescription(Field.getLanguage(), cup.getDieSum()));
             Players[currentturn].updateAccountBalance(Field.getFieldValue(cup.getDieSum()));
-
-            
+            System.out.println(Players[currentturn] + ": " + Players[currentturn].getAccountBalance());
             if(Utility.checkWin(Players[currentturn].getAccountBalance(), winningAmount)) {
                 won = true;
             }
