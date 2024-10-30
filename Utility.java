@@ -6,7 +6,7 @@ class Utility {
         System.out.println(info);
     }
 
-    public static int Playerturn(int turns, Player Player[], int currentturn) {
+    public static int playerTurn(int turns, Player Player[], int currentturn) {
         int playerturn = (currentturn + turns) % Player.length;
         return playerturn;
     }
