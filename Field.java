@@ -55,6 +55,22 @@ class Field {
 
         this.language = language;
 
+        var turn = new int[12];
+        turn[0] = 0;
+        turn[2] = 0;
+        turn[3] = 0;
+        turn[4] = 0;
+        turn[5] = 0;
+        turn[6] = 0;
+        turn[7] = 0;
+        turn[8] = 0;
+        turn[9] = 0;
+        turn[10] = 1;
+        turn[11] = 0;
+        turn[12] = 0;
+
+        this.turn = turn;
+
 
 
     }
