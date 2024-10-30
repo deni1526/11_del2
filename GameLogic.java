@@ -13,11 +13,12 @@ class GameLogic {
         Field.setLanguage(UserInputs.inputLanguage());
         System.out.println(Field.getDescription(Field.getLanguage(), 0));
         for(int i = 0; i < Players.length; i++) {
+            System.out.println("Make player " + i);
             Players[i] = new Player(UserInputs.inputName());
         }
 
         while(!(won)) {
-            System.out.println(Players[currentturn] + ":");
+            System.out.println(Players[currentturn].getName() + ":");
             cup.shakeDie();
             Utility.printDiceFaceValues(cup.getDiceValues());
             System.out.println(Field.getDescription(Field.getLanguage(), cup.getDieSum()));

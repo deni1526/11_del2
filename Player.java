@@ -5,7 +5,8 @@ class Player {
 
     public Player(String name) {
         this.name = name;
-        this.account.setBalance(startBalance);
+        var account = new Account(startBalance);
+        this.account = account;
     }
 
     public String getName() {
