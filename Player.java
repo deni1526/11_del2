@@ -25,7 +25,7 @@ class Player {
     }
 
     public int getAccountBalance() {
-        return account.getBalance();
+        return this.account.getBalance();
     }
 
     public void updateAccountBalance(int update) {
