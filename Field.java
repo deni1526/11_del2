@@ -101,8 +101,8 @@ class Field {
         this.turn = turn;
     }
 
-    public int[] getTurn() {
-        return this.turn;
+    public int getTurn(int turn) {
+        return this.turn[turn];
     }
     
 }
