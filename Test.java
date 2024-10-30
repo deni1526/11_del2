@@ -3,6 +3,8 @@ class test {
         var cup = new RaffleCup(2);
         var acc = new Account(1000);
 
+        //skal tilfoeje spiller og aendre programmet omkring en spiller
+
         //General cash growth test
         for (int i = 0; i < 100; i++) {
             cup.shakeDie();
