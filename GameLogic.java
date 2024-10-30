@@ -20,7 +20,7 @@ class GameLogic {
             System.out.println(Players[currentturn] + ":");
             cup.shakeDie();
             
-            if(checkWin(Players[currentturn].getAccountBalance(), winningAmount)) {
+            if(Utility.checkWin(Players[currentturn].getAccountBalance(), winningAmount)) {
                 won = true;
             }
             currentturn = Utility.Playerturn(Field.getTurn(cup.getDieSum()), Players, currentturn);
