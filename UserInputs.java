@@ -1,4 +1,4 @@
-class UI {
+class UserInputs {
 
 
     public static String inputName() {
