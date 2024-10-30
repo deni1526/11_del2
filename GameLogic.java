@@ -7,6 +7,7 @@ class GameLogic {
         int currentturn = 0;
         var Field = new Field();
         boolean won = false;
+        int winningAmount = 3000;
 
         Utility.printLanguages();
         Field.setLanguage(UserInputs.inputLanguage());
@@ -18,9 +19,13 @@ class GameLogic {
         while(!(won)) {
             System.out.println(Players[currentturn] + ":");
             cup.shakeDie();
-
+            
+            if(checkWin(Players[currentturn].getAccountBalance(), winningAmount)) {
+                won = true;
+            }
             currentturn = Utility.Playerturn(Field.getTurn(cup.getDieSum()), Players, currentturn);
         }
+
 
 
 
