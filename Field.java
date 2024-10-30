@@ -72,7 +72,6 @@ class Field {
         this.turn = turn;
 
 
-
     }
     
 }
