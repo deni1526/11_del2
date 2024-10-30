@@ -17,4 +17,14 @@ class Utility {
         }
         return false;
     }
+
+    public static void printDiceFaceValues(int[] dices) {
+        for (int i = 0; i < dices.length ; i++) {
+            System.out.print("Dice " + (i+1) + ": " + dices[i]);
+
+            if (!(i == (dices.length-1))) {
+                System.out.print(", ");
+            }
+        }
+    }
 }
