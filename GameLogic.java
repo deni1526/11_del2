@@ -19,11 +19,15 @@ class GameLogic {
         while(!(won)) {
             System.out.println(Players[currentturn] + ":");
             cup.shakeDie();
+            Utility.printDiceFaceValues(cup.getDiceValues());
+            Field.getDescription(Field.getLanguage(), cup.getDieSum());
+            Players[currentturn].updateAccountBalance(Field.getFieldValue(cup.getDieSum()));
+
             
             if(Utility.checkWin(Players[currentturn].getAccountBalance(), winningAmount)) {
                 won = true;
             }
-            currentturn = Utility.Playerturn(Field.getTurn(cup.getDieSum()), Players, currentturn);
+            currentturn = Utility.playerTurn(Field.getTurn(cup.getDieSum()), Players, currentturn);
         }
 
 
