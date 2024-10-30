@@ -28,4 +28,8 @@ class Player {
         return account.getBalance();
     }
 
+    public void updateAccountBalance(int update) {
+        this.account.updateBalance(update);
+    }
+
 }
