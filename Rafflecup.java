@@ -17,7 +17,7 @@ class RaffleCup {
          die[i].setFaceValue(rand.nextInt(this.die[i].getMax() - this.die[i].getMin() + 1) + this.die[i].getMin());
       }
    }
-   public void calDieSum(){
+   public void callDieSum(){
       this.dieSum = 0;
       for(int i = 0; i < this.die.length;i++){
         this.dieSum += die[i].getFaceValue();
