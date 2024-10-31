@@ -6,7 +6,6 @@ class UserInputs {
     public static String inputName() {
         scanner.useLocale(java.util.Locale.ENGLISH);
         var name = scanner.nextLine();  
-        System.out.println(name);
         return name;
     }
 

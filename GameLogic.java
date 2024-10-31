@@ -13,7 +13,7 @@ class GameLogic {
         Field.setLanguage(UserInputs.inputLanguage());
         System.out.println(Field.getDescription(Field.getLanguage(), 0));
         for(int i = 0; i < Players.length; i++) {
-            System.out.println("Make player " + i);
+            System.out.println("Player" + (i+1) + ":");
             Players[i] = new Player(UserInputs.inputName());
         }
 
