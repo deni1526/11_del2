@@ -1,22 +1,22 @@
 import java.util.Scanner;
 
 class UserInputs {
-
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static String inputName() {
-        Scanner scanner = new Scanner(System.in);
         scanner.useLocale(java.util.Locale.ENGLISH);
-        var name = scanner.nextLine();
+        var name = scanner.nextLine();  
         System.out.println(name);
-        scanner.close();
         return name;
     }
 
     public static int inputLanguage() {
-        Scanner scanner = new Scanner(System.in);
         scanner.useLocale(java.util.Locale.ENGLISH);
-        var language = Integer.parseInt(scanner.nextLine());
-        scanner.close();
+        int language = Integer.parseInt(scanner.nextLine());
         return language;
     }    
+
+    public static void closeScanner() {
+        scanner.close();
+    }
 }
