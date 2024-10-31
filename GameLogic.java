@@ -30,6 +30,7 @@ class GameLogic {
             }
             currentturn = Utility.playerTurn(Field.getTurn(cup.getDieSum()), Players, currentturn);
         }
+        System.out.println(Players[currentturn].getName() + " won the game");
 
 
 
