@@ -1,3 +1,5 @@
+/*
+
 class test {
     public static void main(String[] args) {
         var cup = new RaffleCup(2, 1, 6);
@@ -41,3 +43,5 @@ class test {
         System.out.println("time for one turn to play out is: " + timeMilli + "ms");
     }
 }
+
+*/
