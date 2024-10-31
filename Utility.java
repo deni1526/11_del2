@@ -26,5 +26,6 @@ class Utility {
                 System.out.print(", ");
             }
         }
+        System.out.println();
     }
 }

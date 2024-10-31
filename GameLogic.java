@@ -3,7 +3,7 @@ class GameLogic {
     public static void runGame() {
         //creating objects
         var Players = new Player[2];
-        var cup = new RaffleCup(2);
+        var cup = new RaffleCup(2, 1, 6);
         int currentturn = 0;
         var Field = new Field();
         boolean won = false;
@@ -19,11 +19,12 @@ class GameLogic {
 
         while(!(won)) {
             System.out.println(Players[currentturn].getName() + ":");
+            UserInputs.inputWait();
             cup.shakeDie();
             Utility.printDiceFaceValues(cup.getDiceValues());
             System.out.println(Field.getDescription(Field.getLanguage(), cup.getDieSum()));
             Players[currentturn].updateAccountBalance(Field.getFieldValue(cup.getDieSum()));
-            System.out.println(Players[currentturn] + ": " + Players[currentturn].getAccountBalance());
+            System.out.println(Players[currentturn].getName() + ": " + Players[currentturn].getAccountBalance());
             if(Utility.checkWin(Players[currentturn].getAccountBalance(), winningAmount)) {
                 won = true;
             }

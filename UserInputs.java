@@ -18,4 +18,10 @@ class UserInputs {
     public static void closeScanner() {
         scanner.close();
     }
+
+    public static String inputWait() {
+        scanner.useLocale(java.util.Locale.ENGLISH);
+        var name = scanner.nextLine();  
+        return "";
+    }
 }

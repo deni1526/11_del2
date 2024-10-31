@@ -57,18 +57,18 @@ class Field {
         this.languages = languages;
 
         var turn = new int[13];
-        turn[0] = 0;
-        turn[2] = 0;
-        turn[3] = 0;
-        turn[4] = 0;
-        turn[5] = 0;
-        turn[6] = 0;
-        turn[7] = 0;
-        turn[8] = 0;
-        turn[9] = 0;
-        turn[10] = 1;
-        turn[11] = 0;
-        turn[12] = 0;
+        turn[0] = 1;
+        turn[2] = 1;
+        turn[3] = 1;
+        turn[4] = 1;
+        turn[5] = 1;
+        turn[6] = 1;
+        turn[7] = 1;
+        turn[8] = 1;
+        turn[9] = 1;
+        turn[10] = 0;
+        turn[11] = 1;
+        turn[12] = 1;
 
         this.turn = turn;
     }
