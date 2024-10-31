@@ -18,7 +18,7 @@ class GameLogic {
         }
 
         while(!(won)) {
-            System.out.println(Players[currentturn].getName() + ":");
+            System.out.println("\n" + Players[currentturn].getName() + ":");
             UserInputs.inputWait();
             cup.shakeDie();
             Utility.printDiceFaceValues(cup.getDiceValues());

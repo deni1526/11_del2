@@ -1,6 +1,6 @@
 class test {
     public static void main(String[] args) {
-        var cup = new RaffleCup(2);
+        var cup = new RaffleCup(2, 1, 6);
         var acc = new Account(1000);
 
         //skal tilfoeje spiller og aendre programmet omkring en spiller
