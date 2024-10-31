@@ -14,6 +14,11 @@ class Account {
     }
 
     public void updateBalance(int update) {
-        this.balance += (update);
+        if(this.balance+(update) < 0) {
+            System.out.println("Transaction not complete");
+        } else {
+            this.balance += (update);
+        }
+        
     }
 }
