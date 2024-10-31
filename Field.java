@@ -1,12 +1,12 @@
 class Field {
     private String[][] description;
     private int[] fieldValue;
-   // private String[] languages;
+    private String[] languages;
     private int language;
     private int[] turn;
 
     public Field() {
-        var description = new String[2][13];
+        var description = new String[this.languages.length][12];
         description[0][0] = "Game info";
         description[0][2] = "You climb to the top of the tower and discover a hidden treasure. You gain 250 points!";
         description[0][3] = "You stumble into a deep crater and struggle to get out. You lose 100 points.";
@@ -34,7 +34,7 @@ class Field {
 
         this.description = description;
 
-        var fieldValue = new int[13];
+        var fieldValue = new int[12];
         fieldValue[0] = 0;
         fieldValue[2] = +250;
         fieldValue[3] = -100;
@@ -54,9 +54,9 @@ class Field {
         languages[0] = "English";
         languages[1] = "Dansk";
 
-       // this.languages = languages;
+        this.languages = languages;
 
-        var turn = new int[13];
+        var turn = new int[12];
         turn[0] = 0;
         turn[2] = 0;
         turn[3] = 0;
@@ -93,8 +93,8 @@ class Field {
         this.fieldValue = fieldValue;
     }
 
-    public int getFieldValue(int field) {
-        return this.fieldValue[field];
+    public int[] getFieldValue() {
+        return this.fieldValue;
     }
 
     public void setTurn(int[] turn) {
