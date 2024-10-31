@@ -11,8 +11,16 @@ class UserInputs {
 
     public static int inputLanguage() {
         scanner.useLocale(java.util.Locale.ENGLISH);
-        int language = Integer.parseInt(scanner.nextLine());
+        int language = 4;
+        while(!(language == 0 || language == 1)) {
+            language = Integer.parseInt(scanner.nextLine());
+            if(!(language == 0 || language == 1)) {
+                System.out.println("Please enter a valid number");
+            }
+        }
         return language;
+       
+      
     }    
 
     public static void closeScanner() {
