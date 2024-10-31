@@ -2,40 +2,40 @@ class GameLogic {
 
     public static void runGame() {
         //creating objects
-        var Players = new Player[2];
+        var players = new Player[2];
         var cup = new RaffleCup(2, 1, 6);
         int currentturn = 0;
-        var Field = new Field();
+        var field = new Field();
         boolean won = false;
         int winningAmount = 3000;
 
         Utility.printLanguages();
-        Field.setLanguage(UserInputs.inputLanguage());
-        System.out.println(Field.getDescription(Field.getLanguage(), 0));
-        for(int i = 0; i < Players.length; i++) {
+        field.setLanguage(UserInputs.inputLanguage());
+        System.out.println(field.getDescription(field.getLanguage(), 0));
+        for(int i = 0; i < players.length; i++) {
             System.out.println("Player" + (i+1) + ":");
-            Players[i] = new Player(UserInputs.inputName());
+            players[i] = new Player(UserInputs.inputName());
         }
 
         while(!(won)) {
-            System.out.println("\n" + Players[currentturn].getName() + ":");
+            System.out.println("\n" + players[currentturn].getName() + ":");
             UserInputs.inputWait();
             cup.shakeDie();
             Utility.printDiceFaceValues(cup.getDiceValues());
-            System.out.println(Field.getDescription(Field.getLanguage(), cup.getDieSum()));
-            Players[currentturn].updateAccountBalance(Field.getFieldValue(cup.getDieSum()));
-            System.out.println(Players[currentturn].getName() + ": " + Players[currentturn].getAccountBalance());
-            if(Utility.checkWin(Players[currentturn].getAccountBalance(), winningAmount)) {
+            System.out.println(field.getDescription(field.getLanguage(), cup.getDieSum()));
+            players[currentturn].updateAccountBalance(field.getFieldValue(cup.getDieSum()));
+            System.out.println(players[currentturn].getName() + ": " + players[currentturn].getAccountBalance());
+            if(Utility.checkWin(players[currentturn].getAccountBalance(), winningAmount)) {
                 won = true;
             }
-            currentturn = Utility.playerTurn(Field.getTurn(cup.getDieSum()), Players, currentturn);
+            currentturn = Utility.playerTurn(field.getTurn(cup.getDieSum()), players, currentturn);
         }
-        System.out.println(Players[currentturn].getName() + " won the game");
+        System.out.println(players[currentturn].getName() + " won the game");
 
 
 
 
-        //methods til spil
+    
     }
 
 
