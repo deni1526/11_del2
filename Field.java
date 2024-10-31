@@ -7,7 +7,21 @@ class Field {
 
     public Field() {
         var description = new String[2][13];
-        description[0][0] = "Game info";
+        description[0][0] = "Game Overview:\n" + //
+                        "Adventure Dice is a two-player game where players take turns rolling two dice to navigate through a board filled with various fields. Each field has its own unique challenge or reward that impacts the players' points. The goal is to strategically roll and land on fields that increase your balance, while avoiding fields that cause losses. The first player to reach 3000 points wins the game!\n" + //
+                        "\n" + //
+                        "Objective:\n" + //
+                        "Start with 1000 points and aim to be the first player to reach 3000 points by gaining rewards and avoiding penalties as you move across different fields on the board.\n" + //
+                        "\n" + //
+                        "How to Play:\n" + //
+                        "\n" + //
+                        "Roll the Dice: Each player rolls two dice on their turn.\n" + //
+                        "Move to a Field: Based on the dice roll, the player lands on a field with a number between 2 and 12.\n" + //
+                        "Experience the Field Effect: Each field has a unique effect that will either add or deduct points from the player's balance. Some fields are beneficial, while others can be challenging.\n" + //
+                        "Special Fields:\n" + //
+                        "The Werewall: You lose points but gain an extra turn.\n" + //
+                        "Goldmine: Land here for a big reward!\n" + //
+                        "Win the Game: The first player to accumulate 3000 points wins.";
         description[0][2] = "Field 2: You climb to the top of the tower and discover a hidden treasure. You gain 250 points!";
         description[0][3] = "Field 3: You stumble into a deep crater and struggle to get out. You lose 100 points.";
         description[0][4] = "Field 4: You approach the grand palace gates, and the guards reward you with a gift. You gain 100 points.";
@@ -19,7 +33,21 @@ class Field {
         description[0][10] = "Field 10: You face the mighty Werewall and lose some strength. You lose 80 points, but the wall grants you an extra turn.";
         description[0][11] = "Field 11: You fall into a deep pit and struggle to climb out. You lose 50 points.";
         description[0][12] = "Field 12: You have found gold in the mountain and sell it for 650 points. You are rich!";
-        description[1][0] = "Game info";
+        description[1][0] = "Spiloversigt:\n" + //
+                        "Adventure Dice er et to-spiller spil, hvor spillerne skiftes til at kaste to terninger og navigere gennem en spilleplade fyldt med forskellige felter. Hvert felt har sin egen unikke udfordring eller belønning, der påvirker spillernes point. Målet er at strategisk lande på felter, der øger din balance, mens du undgår felter, der medfører tab. Den første spiller, der når 3000 point, vinder spillet!\n" + //
+                        "\n" + //
+                        "Mål:\n" + //
+                        "Start med 1000 point og stræb efter at blive den første spiller, der når 3000 point ved at opnå belønninger og undgå straf, mens du bevæger dig gennem de forskellige felter på spillepladen.\n" + //
+                        "\n" + //
+                        "Sådan spiller du:\n" + //
+                        "\n" + //
+                        "Kast terningerne: Hver spiller kaster to terninger på sin tur.\n" + //
+                        "Bevæg dig til et felt: Baseret på terningekastet lander spilleren på et felt med et nummer mellem 2 og 12.\n" + //
+                        "Oplev felteffekten: Hvert felt har en unik effekt, der enten tilføjer eller trækker point fra spillerens balance. Nogle felter er gavnlige, mens andre kan være udfordrende.\n" + //
+                        "Specielle felter:\n" + //
+                        "Werewall: Du mister point, men får en ekstra tur.\n" + //
+                        "Goldmine: Land her for en stor belønning!\n" + //
+                        "Vind spillet: Den første spiller, der når 3000 point, vinder.";
         description[1][2] = "Felt 2: Du klatrer til toppen af tårnet og opdager en skjult skat. Du får 250 point!";
         description[1][3] = "Felt 3: Du klatrer til toppen af tårnet og opdager en skjult skat. Du får 250 point!"; 
         description[1][4] = "Felt 4: Du nærmer dig de storslåede paladsporte, og vagterne belønner dig med en gave. Du får 100 point.";
