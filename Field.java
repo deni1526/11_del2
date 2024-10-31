@@ -93,8 +93,8 @@ class Field {
         this.fieldValue = fieldValue;
     }
 
-    public int[] getFieldValue() {
-        return this.fieldValue;
+    public int getFieldValue(int field) {
+        return this.fieldValue[field];
     }
 
     public void setTurn(int[] turn) {
