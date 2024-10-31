@@ -12,7 +12,7 @@ public class testBalance {
             cup.shakeDie();
             player[0].updateAccountBalance(field.getFieldValue(cup.getDieSum()));
             
-            balance += player[0].getAccountBalance();
+            balance = player[0].getAccountBalance();
             System.out.println("Player balance : " + balance);
             if (balance < 0) {
                 System.out.println("balance is less than 0");

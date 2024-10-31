@@ -6,7 +6,7 @@ public class testBalGrowth {
         player[0] = new Player("test");
 
         //General cash growth test
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 101; i++) {
             cup.shakeDie();
             player[0].updateAccountBalance(field.getFieldValue(cup.getDieSum()));
             if (i==10 || i==20 || i==30 || i==40 || i==50 || i==60 || i==70 || i==80 || i==90 || i==100) {

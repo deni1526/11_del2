@@ -12,7 +12,7 @@ public class testSpeed {
         player[0].updateAccountBalance(field.getFieldValue(cup.getDieSum()));
 
         long end = System.nanoTime();
-        long timeNano = begin - end;
+        long timeNano = end - begin;
         double timeMilli = timeNano/1e6;
 
         System.out.println("time for one turn to play out is: " + timeMilli + "ms");
